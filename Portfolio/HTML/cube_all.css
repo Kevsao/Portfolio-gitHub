@@ -1,0 +1,464 @@
+.cube1 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    top: calc(50% + 180px);
+    left: calc(50% - 500px);
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate 10s linear infinite;
+    z-index: 2;
+}
+
+.cube1 div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.cube1 div span {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#ffbc00,#ff0058);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(52.5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+
+.top1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 126px;
+    height: 126px;
+    background: linear-gradient(45deg,#ffbc00,#ff0058);
+    transform: rotateX(90deg) translateZ(52.5px);
+}
+
+.top1::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 105px;
+    height: 105px;
+    background: #eb5e00;
+    transform: translateZ(-140px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(235,94,0,0.2),
+    0 0 200px rgba(235,94,0,0.2),
+    0 0 300px rgba(235,94,0,0.4),
+    0 0 400px rgba(235,94,0,0.6),
+    0 0 500px rgba(235,94,0,1);
+}
+
+/*--------------------------------------------------------------------------*/
+
+.cube2 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    top: calc(50% + 180px);
+    left: calc(50% - 120px);
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate 10s linear infinite;
+    z-index: 2;
+}
+
+.cube2 div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.cube2 div span {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(315deg,#03a9f4,#dd0db0);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(52.5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+
+.top2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 126px;
+    height: 126px;
+    background: linear-gradient(315deg,#03a9f4,#dd0db0);
+    transform: rotateX(90deg) translateZ(52.5px);
+}
+
+.top2::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 105px;
+    height: 105px;
+    background: #03a9f4;
+    transform: translateZ(-140px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(3, 169, 244,0.2),
+    0 0 200px rgba(3, 169, 244,0.2),
+    0 0 300px rgba(3, 169, 244,0.4),
+    0 0 400px rgba(3, 169, 244,0.6),
+    0 0 500px rgba(3, 169, 244,1);
+}
+
+/*--------------------------------------------------------------------------*/
+
+.cube3 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    top: calc(50% + 180px);
+    left: calc(50% + 260px);
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate 10s linear infinite;
+    z-index: 2;
+}
+
+.cube3 div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.cube3 div span {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(315deg,#4dff03,#00d0ff);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(52.5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+
+.top3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 126px;
+    height: 126px;
+    background: linear-gradient(315deg,#4dff03,#00d0ff);
+    transform: rotateX(90deg) translateZ(52.5px);
+}
+
+.top3::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 105px;
+    height: 105px;
+    background: #4dff03;
+    transform: translateZ(-140px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(77, 255, 3,0.2),
+    0 0 200px rgba(77, 255, 3,0.2),
+    0 0 300px rgba(77, 255, 3,0.4),
+    0 0 400px rgba(77, 255, 3,0.6),
+    0 0 500px rgba(77, 255, 3,1);
+}
+
+/*--------------------------------------------------------------------------*/
+
+.cube4 {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    top: calc(50% + 180px);
+    left: calc(50% + 640px);
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate 10s linear infinite;
+    z-index: 2;
+}
+
+.cube4 div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.cube4 div span {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(315deg,#eeff03,#2600ff);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(52.5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+
+.top4 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 126px;
+    height: 126px;
+    background: linear-gradient(315deg,#eeff03,#2600ff);
+    transform: rotateX(90deg) translateZ(52.5px);
+}
+
+.top4::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 105px;
+    height: 105px;
+    background: #eeff03;
+    transform: translateZ(-140px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(238, 255, 3,0.2),
+    0 0 200px rgba(238, 255, 3,0.2),
+    0 0 300px rgba(238, 255, 3,0.4),
+    0 0 400px rgba(238, 255, 3,0.6),
+    0 0 500px rgba(238, 255, 3,1);
+}
+
+@keyframes animate {
+    0% {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*
+Ordinateur de bureau standard :
+    Résolution typique : 1920x1080 pixels (Full HD)
+Ordinateur portable :
+    15 pouces : 1920x1080 pixels
+    17 pouces : 1920x1080 pixels
+iMac :
+    21,5 pouces : 1920x1080 pixels
+*/
+@media screen and (max-width: 1920px) and (max-height: 1080px) {
+    @media screen and (max-width: 1919px) {
+        .cube1 {
+            top: calc(50% + 180px);
+            left: calc(50% - 488px);
+        }
+        .cube2 {
+            top: calc(50% + 180px);
+            left: calc(50% - 132px);
+        }
+        .cube3 {
+            top: calc(50% + 180px);
+            left: calc(50% + 224px);
+        }
+        .cube4 {
+            top: calc(50% + 180px);
+            left: calc(50% + 580px);
+        }
+
+        /*Arrête les cubes au même niveau que les boxs*/
+        @media screen and (max-height: 930px) {
+            .cube1,
+            .cube2,
+            .cube3,
+            .cube4 {
+                top: 645px;
+            }
+        }
+    }
+    @media screen and (max-width: 1440px) {
+        .cube1 {
+            width: 90px;
+            height: 90px;
+            top: calc(64%);
+            left: calc(50% - 464px);
+        }
+        .cube1 div span,
+        .cube2 div span,
+        .cube3 div span,
+        .cube4 div span {
+            transform: rotateY(calc(90deg * var(--i))) translateZ(45px);
+        }
+        .top1,
+        .top2,
+        .top3,
+        .top4 {
+            width: 126px;
+            height: 126px;
+            transform: rotateX(90deg) translateZ(45px);
+        }
+        .top1::before,
+        .top2::before,
+        .top3::before,
+        .top4::before {
+            width: 90px;
+            height: 90px;
+            transform: translateZ(-120px);
+        }
+        .cube2 {
+            width: 90px;
+            height: 90px;
+            top: calc(64%);
+            left: calc(50% - 129px);
+        }
+        .cube3 {
+            width: 90px;
+            height: 90px;
+            top: calc(64%);
+            left: calc(50% + 206px);
+        }
+        .cube4 {
+            width: 90px;
+            height: 90px;
+            top: calc(64%);
+            left: calc(50% + 541px);
+        }
+
+        /*Arrête les cubes au même niveau que les boxs*/
+        @media screen and (max-height: 870px) {
+            .cube1,
+            .cube2,
+            .cube3,
+            .cube4 {
+                top: 555px;
+            }
+        }
+    }
+    @media screen and (max-width: 1349px) {
+        .cube1 {
+            top: calc(32% + 40px);
+            left: calc(50% - 50px);
+        }
+        .cube2 {
+            top: calc(52% + 30px);
+            left: calc(50% - 50px);
+        }
+        .cube3 {
+            top: calc(75% + 50px);
+            left: calc(50% - 50px);
+        }
+        .cube4 {
+            top: calc(95% + 40px);
+            left: calc(50% - 50px);
+        }
+
+        /*Arrête les cubes au même niveau que les boxs*/
+        @media screen and (max-height: 805px) {
+            .cube1 {
+            top: 300px; 
+            }
+            .cube2 {
+                top: 461px; 
+            }
+            .cube3 {
+                top: 650px; 
+            }
+            .cube4 {
+                top: 808px; 
+            }
+        }
+    }
+    @media screen and (max-width: 1023px) {
+        .cube1,
+        .cube2,
+        .cube3,
+        .cube4 {
+            display: none;
+        }
+    }
+}
+
+/*--------------------------------------------------------------------------*/
+/*
+Ordinateur portable :
+    13 pouces : 1366x768 pixels
+*/
+@media screen and (max-width: 1366px) and (max-height: 768px) {
+    .cube1 {
+        top: calc(50% + 150px);
+        left: calc(50% - 380px);
+    }
+    .cube2 {
+        top: calc(50% + 150px);
+        left: calc(50% - 120px);
+    }
+    .cube3 {
+        top: calc(50% + 150px);
+        left: calc(50% + 140px);
+    }
+    .cube4 {
+        top: calc(50% + 150px);
+        left: calc(50% + 400px);
+    }
+
+    @media screen and (max-width: 1200px) {
+        .cube1 {
+            top: calc(50% - 100px);
+            left: calc(50% - 45px);
+        }
+        .cube2 {
+            top: calc(50% + 60px);
+            left: calc(50% - 45px);
+        }
+        .cube3 {
+            top: calc(50% + 310px);
+            left: calc(50% - 45px);
+        }
+        .cube4 {
+            top: calc(50% + 470px);
+            left: calc(50% - 45px);
+        }
+        /*Arrête les cubes au même niveau que les boxs*/
+        @media screen and (max-height: 768px) {
+            .cube1 {
+            top: 280px; 
+            }
+            .cube2 {
+                top: 441px; 
+            }
+            .cube3 {
+                top: 690px; 
+            }
+            .cube4 {
+                top: 850px; 
+            }
+        }
+    }
+}
+
+/*--------------------------------------------------------------------------*/

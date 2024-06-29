@@ -1,0 +1,251 @@
+.container_explications {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+
+.container_explications .box {
+    position: relative;
+    width: fit-content; /* Ajuster la largeur en fonction du contenu */
+    height: fit-content; /* Ajuster la hauteur en fonction du contenu */
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    transition: 0.5s;
+}
+
+.container_explications .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#17b625,#970035);
+}
+
+.container_explications .box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#17b625,#970035);
+    filter: blur(30px);
+}
+
+/*Couleur des box*/
+.container_explications .box:nth-child(2)::before,
+.container_explications .box:nth-child(2)::after {
+    background: linear-gradient(315deg,#fd8c0a,#00d0ff);
+}
+/*Fin Couleur des box*/
+
+.container_explications .box span {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.container_explications .box span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.container_explications .box .content_explications {
+    position: relative;
+    z-index: 10;
+    padding: 20px 40px;
+}
+
+.container_explications .box .content_explications h2 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.container_explications .box .content_explications p {
+    font-size: 1.1em;
+    color: white;
+    margin: 20px 20px;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+    text-align: justify;
+}
+
+.container_explications .box .content_explications pre {
+    font-size: 1.1em;
+    color: white;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}
+
+
+
+
+/*Changement de la taille des boîtes*/
+.container_explications .box:nth-child(1),
+.container_explications .box:nth-child(2) {
+    width: 550px;
+    height: 600px;
+}
+
+
+
+
+/* Bar */
+.container_explications .box:nth-child(1) .content_explications,
+.container_explications .box:nth-child(2) .content_explications {
+    height: 100%; /* Utiliser toute la hauteur de la boîte pour le contenu */
+    overflow: auto;
+    max-height: 100%; /* Définir une hauteur maximale pour le contenu défilable */
+}
+
+.container_explications .box:nth-child(1) .content_explications::-webkit-scrollbar,
+.container_explications .box:nth-child(2) .content_explications::-webkit-scrollbar {
+    width: 10px; /* Largeur de la barre de défilement */
+    height: 10px; /* Hauteur de la barre de défilement */
+}
+
+.container_explications .box:nth-child(1) .content_explications::-webkit-scrollbar-thumb,
+.container_explications .box:nth-child(2) .content_explications::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg,#970035,#17b625); /* Couleur de la barre de défilement */
+    border-radius: 15px;
+}
+/*Fin Bar*/
+
+
+
+/*--------------------------------------------------------------------------*/
+
+
+/*
+Ordinateur de bureau standard :
+    Résolution typique : 1920x1080 pixels (Full HD)
+Ordinateur portable :
+    15 pouces : 1920x1080 pixels
+    17 pouces : 1920x1080 pixels
+iMac :
+    21,5 pouces : 1920x1080 pixels
+*/
+@media screen and (max-width: 1920px) and (max-height: 1080px) {
+    @media screen and (max-width: 1440px) {
+        .container_explications .box:nth-child(1),
+        .container_explications .box:nth-child(2) {
+            width: 500px;
+            height: 600px;
+        }
+        .container_explications .box .content_explications h2 {
+            font-size: 1.7em;
+        }
+        .container_explications .box .content_explications pre,
+        .container_explications .box .content_explications p {
+            font-size: 0.96em;
+        }
+    }
+    @media screen and (max-width: 1349px) {
+        .container_explications .box:nth-child(1),
+        .container_explications .box:nth-child(2) {
+            width: 400px;
+            height: 500px
+        }
+        .container_explications .box .content_explications h2 {
+            font-size: 1.7em;
+        }
+        .container_explications .box .content_explications pre,
+        .container_explications .box .content_explications p {
+            font-size: 0.96em;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .container_explications .box:nth-child(1),
+        .container_explications .box:nth-child(2) {
+            width: 400px;
+            height: 500px;
+        }
+        .container_explications .box .content_explications h2 {
+            font-size: 1.6em;
+        }
+        .container_explications .box .content_explications pre,
+        .container_explications .box .content_explications p {
+            font-size: 0.8em;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .container_explications .box:nth-child(1),
+        .container_explications .box:nth-child(2) {
+            width: 300px;
+            height: 400px;
+        }
+        .container_explications .box .content_explications h2 {
+            font-size: 1.3em;
+        }
+        .container_explications .box .content_explications pre,
+        .container_explications .box .content_explications p {
+            font-size: 0.8em;
+        }
+    }
+    @media screen and (max-width: 425px) {
+        .container_explications .box:nth-child(1),
+        .container_explications .box:nth-child(2) {
+            width: 200px;
+            height: 275px;
+        }
+        /*Changement des taille de la police*/
+        .container_explications .box .content_explications h2 {
+            font-size: 1em;
+        }
+        .container_explications .box .content_explications pre,
+        .container_explications .box .content_explications p {
+            font-size: 0.7em;
+            text-align: left;
+            margin: auto;
+        }
+    }
+}
+
+/*
+Ordinateur portable :
+    13 pouces : 1366x768 pixels
+*/
+@media screen and (max-width: 1366px) and (max-height: 768px) {
+    .container_explications .box:nth-child(1),
+    .container_explications .box:nth-child(2) {
+        width: 400px;
+        height: 500px;
+    }
+    .container_explications .box .content_explications h2 {
+        font-size: 1.3em;
+    }
+    .container_explications .box .content_explications pre,
+    .container_explications .box .content_explications p {
+        font-size: 0.8em;
+    }
+
+    @media screen and (max-width: 850px) {
+        .container_explications .box:nth-child(1),
+        .container_explications .box:nth-child(2) {
+            width: 300px;
+            height: 400px;
+        }
+    }
+}
+
+/*--------------------------------------------------------------------------*/
